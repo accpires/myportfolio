@@ -13,7 +13,7 @@ def html_page(page_name):
     return render_template(page_name)
 
 def write_to_file(data):
-    with open('database.txt', mode='a') as database:
+	with open('database.txt', mode='a') as database:
 		email = data['email']
 		subject = data['subject']
 		message = data['message']
